@@ -8,6 +8,7 @@ class PostsController < ApplicationController
   end
 
   def new
+    session[:params]
     @post = Post.new
   end
 
